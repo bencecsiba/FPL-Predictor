@@ -1,1 +1,1 @@
-# FPL-Preditor
+# FPL-Predictor
