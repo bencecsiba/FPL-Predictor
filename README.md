@@ -14,7 +14,10 @@ I also trained a split random forest model which performs slightly better. This 
 
 The neural network performed worse than expected. This is not entirely surprising given the tabular nature of the dataset. Across all models, temporal changes were modelled by having a window of 3 weeks and a cumulative average for parameters such as the number of minutes played by a given footballer. I believe that this approach has significant potential, however, if other techniques were to be incorporated, such as LSTM layers or other more complex one that deal with the temporal nature of the data. This, however, would come with its own difficulties due to the relatively limited number of datapoints and the random nature of footballer movements between leagues and teams. 
 
+![Footballers](<Models/PNG image.png>)
+
 Further analysis of the results of the models provided some interesting points. Above is a graph that shows the number of time each footballer would have been chosen for a given game week, split by model. The higher figures are for footballers expected to do well, but more interesting results appear further down. Solanke appearing in this list, despite being a forward for a team currently 14th in the league would initially seem surprising, but he is, at the time of writing, in the teams of 25% of players. 
 
+![Importances](<Models/PNG image 2.png>)
 
 Above is a graph of feature importances for the random forest model. We can see that the transfers of players is taken into account to a relatively large extent, but I still find this result very surprising. We can see that the neural network has not taken this into account to such a large extent.  
